@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_item"
+    android:layout_margin="18dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/iv_fruit"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        tools:text="Name"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_fruit"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:maxLines="3"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_description"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        tools:text="Description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_fruit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_price"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        tools:text="Price"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/iv_fruit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        android:paddingBottom="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
